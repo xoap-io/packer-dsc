@@ -15,7 +15,7 @@ func main() {
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err.Error())
 
-		fmt.Fprintln(os.Stderr, "Atempting to run with internal arguments")
+		fmt.Fprintln(os.Stderr, "Attempting to run with internal arguments")
 		errCommand := pps.RunCommand("start", "provisioner", plugin.DEFAULT_NAME)
 		if errCommand != nil {
 			fmt.Fprintln(os.Stderr, errCommand.Error())
